@@ -1,0 +1,412 @@
+#mainVisual{
+    height: 656px;
+    background-image: url(../images/top_visual.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#mainVisual_text{
+    color: white;
+    padding: 300px;
+    font-size: 2.2em;
+    letter-spacing: -0.05em;
+}
+
+#forum{
+    margin-top: -150px;
+}
+
+.morebtn{
+    color: #113676;
+    font-weight: bold;
+    float: right;
+}
+
+.morebtn:hover .cross{
+    transform: rotate(90deg);
+}
+
+#forum .morebtn{
+    background-color: white;
+    padding: 12px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.cross{
+    margin-left: 7px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.cross::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #113676;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cross::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 14px;
+    background-color: #113676;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#forum_main{
+    clear: both;
+    height: 300px;
+    background-image: linear-gradient(to right, #0080C4,#113676);
+}
+
+#forum_main a{
+    display: block;
+    height: 300px;
+    width: 25%;
+    float: left;
+    padding: 20px;
+    padding-top: 40px;
+    color: white;
+    position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+#forum_main a:last-of-type{
+    border-right: none;
+}
+
+#forum_main a:hover{
+    transform: scale(1.1);
+}
+
+#forum_main a:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#forum_main a:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/notice_thumb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.forum_title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.forum_title::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.forum_cont{
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.forum_state{
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    color: #67CBE2;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 2px solid #67CBE2;
+    padding-bottom: 5px;
+}
+
+#board{
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.two{
+    float: left;
+    width: calc((100% - 50px) / 2);
+}
+
+.two:nth-of-type(odd){
+    margin-right: 50px;
+}
+
+.index_title{
+    font-size: 1.55em;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.index_title .morebtn{
+    font-size: 1rem;
+}
+
+#board .index_title{
+    border-bottom: 1px solid black;
+}
+
+.board_cont{
+    list-style: none;
+}
+
+.board_cont a{
+    display: block;
+    overflow: auto;
+    padding: 0.7em 0;
+}
+
+.board_date{
+    float: left;
+    color: #787878;
+    width: 120px;
+}
+
+.board_title{
+    float: left;
+    font-weight: bold;
+    width: calc(100% - 120px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#intro{
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.three{
+    float: left;
+    width: 75%;
+    padding-right: 50px;
+}
+
+.three .index_title{
+    text-align: center;
+}
+
+.one {
+    float: left;
+    width: 25%;
+}
+
+#icons{
+    overflow: auto;
+}
+
+#icons a{
+    float: left;
+    display: block;
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    transition: all 0.3s;
+
+}
+
+.icon_text{
+    margin-top: 15px;
+}
+
+#icons a:hover{
+   background-color: #9ad9e7;   
+}
+
+.banner{
+    display: block;
+    height: 132px;
+    border-top: 1px dashed #cccccc;
+    font-size: 1.05em;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.banner_arrow{
+    display: inline-block;
+    width: 50px;
+    height: 12px;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    transform: skewX(45deg);
+}
+
+.banner:last-of-type {
+    border-bottom: 1px dashed #cccccc;
+}
+.banner_top {
+    height: 40px;
+}
+.banner_bot {
+    color: #777777;
+}
+#esub {
+    font-size: 1.7em;
+}
+
+.banner:hover .banner_arrow{
+    margin-right: 20px;
+}
+
+#link {
+    margin-top: 100px;
+}
+#link>.cen {
+    border: 1px solid #cccccc;
+    overflow: auto;
+}
+#link .one {
+    line-height: 98px;
+    overflow: auto;
+}
+#link_title {
+    background-color:#0080C4;
+    width: calc(100% - 49px);
+    height: 98px;
+    float: left;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+#link_arrow {
+    float: left;
+    width: 49px;
+    height: 98px;
+    border-left: 49px solid #0080C4;
+    border-top: 49px solid transparent;
+    border-bottom: 49px solid transparent;
+}
+#link .three {
+    line-height: 98px;
+}
+#link .three a {
+    font-size: 1.1em;
+    margin: 0 25px;
+}
+#link .three a:first-of-type {
+    margin-left: 60px;
+}
+#link .three a img {
+    vertical-align: -5px;
+    margin-right: 5px;
+}
+
+@media all and (max-width: 1200px){
+    #mainVisual_text{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media all and (max-width: 1100px){
+    #link .three a{
+        margin: 0 15px;
+    }
+}
+
+@media all and (max-width: 950px){
+    #mainVisual{
+        height: 480px;
+    }
+    #mainVisual_text{
+        font-size: 1.5em;
+        padding-top: 240px;
+    }
+
+    .three{
+        float: none;
+        width: 100%;
+    }
+
+    .one{
+        float: none;
+        width: 100%;
+    }
+
+    #intro .three{
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    #link_title{
+        width: 100%;
+    }
+    #link_arrow{
+        display: none;
+    }
+}
+
+@media all and (max-width: 720px){
+    
+    #mainVisual_text{
+        font-size: 1.2em;
+    }
+    #forum_main{
+        height: 1000px;
+    }
+    #forum_main a{
+        width: 100%;
+        height: 250px;
+        float: none;
+        padding-top: 25px;
+    }
+
+    .two{
+        float: none;
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 50px;
+    }
+
+    #icons>a{
+        width: 50%;
+    }
+
+    #link .three a{
+        display: block;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    #link .three a:first-of-type{
+        margin-left: 15px;
+    }
+
+}
+
+
+
